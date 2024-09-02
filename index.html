@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Dashboard</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" />
+  <!-- Lni Icons -->
+  <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+  <!-- Style -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <aside id="sidebar" class="js-sidebar">
+      <!-- Content For Sidebar -->
+      <div class="h-100">
+        <div class="sidebar-logo">
+          <a href="" class="text-dark">Admin Dashboard</a>
+        </div>
+        <ul class="sidebar-nav">
+          <li class="sidebar-item">
+            <a href="index.html" class="sidebar-link">
+              <i class="lni lni-grid-alt"></i>
+              Dashboard
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link">
+              <i class="lni lni-graduation"></i>
+              <span>Data Mahasiswa</span>
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link">
+              <i class="lni lni-control-panel"></i>
+              <span>Data Matakuliah</span>
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link">
+              <i class="lni lni-book"></i>
+              <span>Data KRS</span>
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="users.html" class="sidebar-link">
+              <i class="lni lni-users"></i>
+              <span>Users</span>
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link">
+              <i class="lni lni-customer"></i>
+              <span>Customers</span>
+            </a>
+          </li>
+        </ul>
+        <div class="sidebar-footer">
+          <a href="#" class="sidebar-link">
+            <i class="lni lni-exit"></i>
+            <span>Logout</span>
+          </a>
+        </div>
+      </div>
+    </aside>
+
+    <main id="main" class="main">
+      <header class="bg-primary">
+        <nav class="navbar navbar-expand">
+          <button class="btn" id="sidebar-toggle" type="button">
+            <i class="lni lni-menu navbar-toggler-icon"></i>
+          </button>
+
+          <div class="navbar-collapse navbar">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a href="#" data-bs-toggle="dropdown" class="nav-icon pe-md-0">
+                  <i class="lni lni-network fw-bold fs-3 text-white"></i>
+                </a>
+                <div class="dropdown-menu dropdown-menu-end">
+                  <a href="#" class="dropdown-item">Profile</a>
+                  <a href="#" class="dropdown-item">Logout</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <div class="pagetitle">
+          <h1>Dashboard</h1>
+          <nav>
+            <ol class="breadcrumb mt-1">
+              <li class="breadcrumb-item">
+                <a href="" class="text-white-50">Home</a>
+              </li>
+              <li class="breadcrumb-item active text-white-50">Dashboard</li>
+            </ol>
+          </nav>
+        </div>
+
+        <section class="section dashboard">
+          <div class="row">
+            <!-- Left side columns -->
+            <div class="col-lg-12">
+              <div class="row">
+                <!-- Sales Card -->
+                <div class="col-xxl-4 col-md-4">
+                  <div class="card info-card sales-card shadow-md">
+                    <div class="card-body">
+                      <h5 class="card-title">Sales</h5>
+
+                      <div class="d-flex align-items-center">
+                        <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                          <i class="lni lni-cart"></i>
+                        </div>
+                        <div class="ps-3">
+                          <h6>145</h6>
+                          <span class="text-success small pt-1 fw-bold">12%</span>
+                          <span class="text-muted small pt-2 ps-1">increase</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Sales Card -->
+
+                <!-- Revenue Card -->
+                <div class="col-xxl-4 col-md-4">
+                  <div class="card info-card revenue-card shadow-md">
+                    <div class="card-body">
+                      <h5 class="card-title">Revenue</h5>
+                      <div class="d-flex align-items-center">
+                        <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                          <i class="lni lni-dollar"></i>
+                        </div>
+                        <div class="ps-3">
+                          <h6>$3,264</h6>
+                          <span class="text-success small pt-1 fw-bold">8%</span>
+                          <span class="text-muted small pt-2 ps-1">increase</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Revenue Card -->
+
+                <!-- Customers Card -->
+                <div class="col-xxl-4 col-md-4">
+                  <div class="card info-card customers-card shadow-md">
+                    <div class="card-body">
+                      <h5 class="card-title">Customers</h5>
+                      <div class="d-flex align-items-center">
+                        <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                          <i class="lni lni-users"></i>
+                        </div>
+                        <div class="ps-3">
+                          <h6>1244</h6>
+                          <span class="text-danger small pt-1 fw-bold">12%</span>
+                          <span class="text-muted small pt-2 ps-1">decrease</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Customers Card -->
+
+                <!-- Reports -->
+                <div class="col-12">
+                  <div class="card shadow-md">
+                    <div class="card-body">
+                      <h5 class="card-title">Reports</h5>
+
+                      <!-- Line Chart -->
+                      <div id="reportsChart"></div>
+
+                      <!-- End Line Chart -->
+                    </div>
+                  </div>
+                </div>
+                <!-- End Reports -->
+              </div>
+            </div>
+            <!-- End Left side columns -->
+          </div>
+        </section>
+      </header>
+    </main>
+    <!-- End #main -->
+  </div>
+
+  <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Script -->
+  <script>
+    const sidebarToggle = document.querySelector("#sidebar-toggle");
+    sidebarToggle.addEventListener("click", function () {
+      document.querySelector("#sidebar").classList.toggle("collapsed");
+    });
+
+  </script>
+
+</body>
+
+</html>
